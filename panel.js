@@ -1,0 +1,31 @@
+const {
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
+  EmbedBuilder,
+  MessageFlags,
+  SlashCommandBuilder,
+} = require('discord.js');
+
+// [コマンド名, ボタンの表示名]
+const FEATURES = [
+  ['welcome', 'ウェルカム'],
+  ['leave', '退出メッセージ'],
+  ['warn', '警告'],
+  ['mute', 'ミュート'],
+  ['kick', 'キック'],
+  ['ban', 'BAN'],
+  ['timeout', 'タイムアウト'],
+  ['antiraid', '荒らし対策'],
+  ['log', 'ログ'],
+  ['level', 'レベル'],
+  ['reactionrole', 'リアクションロール'],
+  ['notify', 'SNS通知'],
+  ['embed', '埋め込み'],
+  ['automod', '自動モデレーション'],
+  ['suggest', '提案'],
+  ['autoreply', '自動返信'],
+  ['addrole', 'ロール付与'],
+  ['removerole', 'ロール削除'],
+  ['roleall', 'ロール一括'],
+  ['channel', 'チャンネル管理'],
